@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+h2 {
+    font-size: 1.95rem;
+}
+h3 {
+    font-size: 1.521rem;
+}
+h4 {
+    font-size: 1.3rem;
+}
+h5 {
+    font-size: 1.079rem;
+}
+h6 {
+    font-size: .871rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.logo {
+    max-width: 100vW;
+}
