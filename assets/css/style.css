@@ -43,6 +43,17 @@ address {
 
 /* end contact info style */
 
+/* artist section style */
+
+figure {
+    margin: 0.5em;
+    border: 3px solid black;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* end artist section style */
+
 /* footer style */
 
 footer {
