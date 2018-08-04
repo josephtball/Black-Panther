@@ -4,7 +4,15 @@
     box-sizing: border-box;
 }
 body {
-    font-size: 1.3rem;
+    background-color: #E0CCAF;
+    color: #131319;
+    font-size: 1.2rem;
+    font-family: 'Noto Serif', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #961D1D;
+    font-family: 'Rye', cursive;
+    text-align: center;
 }
 h1 {
     font-size: 2.6rem;
@@ -24,16 +32,45 @@ h5 {
 h6 {
     font-size: .871rem;
 }
+a {
+    color: #131319;
+}
+img {
+    display: block;
+}
 
 /* end base style */
 
 /* header style */
 
+header {
+    padding: 1.5em 0;
+    background-color: #131319;
+    background-image: url("../images/tattooing-bw-sm.jpeg");
+    background-position: center
+}
 .logo {
-    max-width: 100vW;
+    margin: auto;
+    max-width: 90%;
 }
 
 /* end header style */
+
+/* nav style */
+
+nav {
+    background-color: #131319;
+    color: #58B1BC;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* end nav style */
 
 /* contact info style */
 
@@ -47,8 +84,8 @@ address {
 
 figure {
     margin: 0.5em;
-    border: 3px solid black;
-    background-color: lightgray;
+    border: 3px solid #961D1D;
+    background-color: #131319;
     text-align: center;
 }
 
@@ -59,8 +96,15 @@ figure {
 footer {
     margin-top: 4em;
     padding-bottom: 1.5em;
-    border-top: 1px solid black;
-    background-color: lightgray;
+    border-top: 2px solid #961D1D;
+    background-color: #131319;
+    color: #58B1BC;
+}
+footer h3 {
+    color: #D8B734;
+}
+footer a {
+    color: #58B1BC;
 }
 .copyright {
     text-align: center;
