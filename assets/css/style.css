@@ -9,6 +9,9 @@ body {
     font-size: 1.2rem;
     font-family: 'Noto Serif', serif;
 }
+main {
+    padding: 1em;
+}
 h1, h2, h3, h4, h5, h6 {
     color: #961D1D;
     font-family: 'Rye', cursive;
@@ -62,9 +65,15 @@ nav {
     background-color: #131319;
     color: #58B1BC;
     font-size: 1rem;
+    font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+}
+nav div {
+    padding: 0.5em 0;
 }
 nav ul {
+    display: none;
     margin: 0;
     padding: 0;
     list-style-type: none;
