@@ -80,27 +80,33 @@ nav {
     text-transform: uppercase;
     text-align: center;
 }
-.menu-toggle {
+.fix-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.site-nav-toggle {
     background-color: #212223;
     padding: 0.5em 0;
     box-shadow: 0 3px 2px #888888;
 }
-.menu-toggle:hover {
+.site-nav-toggle:hover {
     color: #494a4b;
-}
-.open {
-    display: block;
 }
 .site-nav {
     display: none;
-    transition: height ease-in-out 300ms;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .site-nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-.site-nav li:first-of-type {
+.top-border {
     border-top: 1px solid #a1a69f;
 }
 .site-nav li {
