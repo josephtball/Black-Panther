@@ -19,7 +19,7 @@
 <body>
         <!-- hero image and logo -->
         <header class="off-menu">
-                <img class="logo" src="assets/images/black-panther-logo.png" alt="Black Panther Tattoo Parlor">
+                <img class="logo wrapper" src="assets/images/black-panther-logo.png" alt="Black Panther Tattoo Parlor">
         </header>
     
         <nav>
@@ -29,101 +29,107 @@
             <div class="site-nav">
                 <ul>
                     <li class="top-border">home</li>
-                    <li>about</li>
                     <li>info</li>
                     <li class="dropdown-toggle">artistis &#9660;</li>
                     <ul class="dropdown">
                         <li>Jim</li>
                         <li>Pete</li>
                     </ul>
+                    <li>gallery</li>
                 </ul>
             </div>
         </nav>
 
-    <main class="off-menu">
-        <section>
-            <!-- about ssection -->
-            <h2>About Black Panther</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies lacus a velit gravida lobortis. Nunc lectus sem, aliquam eget commodo eget, aliquet ac purus. Etiam faucibus, massa id porta tempor, ex tellus cursus nibh, quis facilisis urna justo eget sapien. Integer accumsan, dui posuere pulvinar rutrum, quam enim tempor lorem, vel pulvinar metus diam at quam. Sed nec vestibulum lacus. Vestibulum posuere tortor at laoreet sagittis. Cras imperdiet, risus non porttitor egestas, purus velit iaculis felis, at semper lectus tortor a eros.</p>
-        </section>
+    <main class="off-menu wrapper">
+        <div class="flex">
+            <section class="contact-info">
+                <!-- shop hours and contact info -->
+                <h2>Contact Info</h2>
+                <table>
+                    <tr>
+                        <td><i class="fas fa-phone"></i></td>
+                        <td><a href="tel:732-903-7513">(732) 903-7513</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-envelope"></i></td>
+                        <td><a href="mailto:admin@blackpanther.com">admin@blackpanther.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-home"></i></td>
+                        <td><a href="https://goo.gl/maps/ruaaGYcPKww" target="_blank">
+                                <address>
+                                    2055 NJ-88<br>
+                                    Brick, NJ 08724
+                                </address>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-clock"></i></td>
+                        <td>1pm - 9pm Everyday</td>
+                    </tr>
+                </table>
+            </section>
 
-        <section>
-            <!-- shop hours and contact info -->
-            <h2>Contact Info</h2>
-            <div>
-                <i class="fas fa-phone"></i>
-                <a href="tel:732-903-7513">(732) 903-7513</a>
-            </div>
-            <div>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:admin@blackpanther.com">admin@blackpanther.com</a>
-            </div>
-            <div>
-                <i class="fas fa-home"></i>
-                <a href="https://goo.gl/maps/ruaaGYcPKww" target="_blank">
-                    <address>
-                        2055 NJ-88<br>
-                        Brick, NJ 08724
-                    </address>
-                </a>
-            </div>
-            <div>
-                <i class="fas fa-clock"></i>
-                1pm - 9pm Everyday
-            </div>
-        </section>
+            <section class="about">
+                <!-- about ssection -->
+                <h2>About Black Panther</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies lacus a velit gravida lobortis. Nunc lectus sem, aliquam eget commodo eget, aliquet ac purus. Etiam faucibus, massa id porta tempor, ex tellus cursus nibh, quis facilisis urna justo eget sapien. Integer accumsan, dui posuere pulvinar rutrum, quam enim tempor lorem, vel pulvinar metus diam at quam. Sed nec vestibulum lacus. Vestibulum posuere tortor at laoreet sagittis. Cras imperdiet, risus non porttitor egestas, purus velit iaculis felis, at semper lectus tortor a eros.</p>
+            </section>
+        </div>
 
         <section>
             <!-- tattoo artist -->
             <h2>Artists</h2>
-            <div>
-                <figure>
-                    <img src="assets/images/artist-name.jpg" alt="Artist Name">
-                    <figcaption>
-                        <h3>Artist Name</h3>
-                        <a href="/artist-name">Learn More</a>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/artist-name.jpg" alt="Artist Name">
-                    <figcaption>
-                        <h3>Artist Name</h3>
-                        <a href="/artist-name">Learn More</a>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/artist-name.jpg" alt="Artist Name">
-                    <figcaption>
-                        <h3>Artist Name</h3>
-                        <a href="/artist-name">Learn More</a>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/artist-name.jpg" alt="Artist Name">
-                    <figcaption>
-                        <h3>Artist Name</h3>
-                        <a href="/artist-name">Learn More</a>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/artist-name.jpg" alt="Artist Name">
-                    <figcaption>
-                        <h3>Artist Name</h3>
-                        <a href="/artist-name">Learn More</a>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/artist-name.jpg" alt="Artist Name">
-                    <figcaption>
-                        <h3>Artist Name</h3>
-                        <a href="/artist-name">Learn More</a>
-                    </figcaption>
-                </figure>
+            <div class="artist-figures">
+                
+                <a href="/artist-name">
+                    <figure class="artist-name-1">
+                        <figcaption>
+                            <h3>Artist Name</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                
+                <a href="/artist-name">
+                    <figure class="artist-name-2">
+                        <figcaption>
+                            <h3>Artist Name</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                
+                <a href="/artist-name">
+                    <figure class="artist-name-3">
+                        <figcaption>
+                            <h3>Artist Name</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                
+                <a href="/artist-name">
+                    <figure class="artist-name-4">
+                        <figcaption>
+                            <h3>Artist Name</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                
+                <a href="/artist-name">
+                    <figure class="artist-name-5">
+                        <figcaption>
+                            <h3>Artist Name</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                
+                <a href="/artist-name">
+                    <figure class="artist-name-6">
+                        <figcaption>
+                            <h3>Artist Name</h3>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
         </section>
 
@@ -134,44 +140,49 @@
     </main>
 
     <footer class="off-menu">
-        <!-- footer with social links -->
-        <div>
-            <h3>connect with us</h3>
-            <a href="https://www.facebook.com/Black-Panther-Tattoo-189053257829977/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/blackpanthertattoo/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
-        </div>
+        <section class="flex">
+            <div>
+                <!-- shop hours and contact info -->
+                <h3>Contact Info</h3>
+                <table>
+                    <tr>
+                        <td><i class="fas fa-phone"></i></td>
+                        <td><a href="tel:732-903-7513">(732) 903-7513</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-envelope"></i></td>
+                        <td><a href="mailto:admin@blackpanther.com">admin@blackpanther.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-home"></i></td>
+                        <td><a href="https://goo.gl/maps/ruaaGYcPKww" target="_blank">
+                                <address>
+                                    2055 NJ-88<br>
+                                    Brick, NJ 08724
+                                </address>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-clock"></i></td>
+                        <td>1pm - 9pm Everyday</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div>
+                <!-- footer with social links -->
+                <h3>connect with us</h3>
+                <a class="social-link" href="https://www.facebook.com/Black-Panther-Tattoo-189053257829977/" target="_blank"><i class="fab fa-facebook-square"></i> Black Panter Tattoo</a><br>
+                <a class="social-link" href="https://www.instagram.com/blackpanthertattoo/" target="_blank"><i class="fab fa-instagram"></i> blackpantertattoo</a><br>
+                <a class="social-link" href="" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+            </div>
+        </section>
 
-        <div>
-            <!-- shop hours and contact info -->
-            <h3>Contact Info</h3>
-            <div>
-                <i class="fas fa-phone"></i>
-                <a href="tel:732-903-7513">(732) 903-7513</a>
-            </div>
-            <div>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:admin@blackpanther.com">admin@blackpanther.com</a>
-            </div>
-            <div>
-                <i class="fas fa-home"></i>
-                <a href="https://goo.gl/maps/ruaaGYcPKww" target="_blank">
-                    <address>
-                        2055 NJ-88<br>
-                        Brick, NJ 08724
-                    </address>
-                </a>
-            </div>
-            <div>
-                <i class="fas fa-clock"></i>
-                1pm - 9pm Everyday
-            </div>
-        </div>
-
-        <div class="copyright">
+        <section class="copyright">
             &copy; 2018 Black Panther Tattoo Parlor. All Rights Reserved.<br>
             <a href="https://joe-ball-portfolio.herokuapp.com" target="_blank">Website by Joseph Ball</a>
-        </div>
+        </section>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

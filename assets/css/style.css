@@ -1,14 +1,16 @@
 /* 
 
-@media (max-width: 599px) phone only
-@media (min-width: 600px) tablet portrait
-@media (min-width: 900px) tablet landscape
-@media (min-width: 1200px) desktop
-@media (min-width: 1800px) big desktop
+-----breakpoints-----
+
+@media (max-width: 599px) {} phone only
+@media (min-width: 600px) {} tablet portrait
+@media (min-width: 900px) {} tablet landscape
+@media (min-width: 1200px) {} desktop
+@media (min-width: 1800px) {} big desktop
 
 */
 
-/* base style */
+/* -----base style----- */
 
 * {
     box-sizing: border-box;
@@ -19,6 +21,21 @@ body {
     font-size: 1.2rem;
     font-family: 'Noto Serif', serif;
 }
+@media (min-width: 600px) {
+    body {
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.6rem;
+    }
+}
+/* @media (min-width: 1800px) {
+    body {
+        font-size: 1.8rem;
+    }
+} */
 main {
     padding: 1em;
 }
@@ -45,33 +62,117 @@ h5 {
 h6 {
     font-size: .871rem;
 }
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2.15rem;
+    }
+    h3 {
+        font-size: 1.721rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.279rem;
+    }
+    h6 {
+        font-size: 1.071rem;
+    }
+}
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.35rem;
+    }
+    h3 {
+        font-size: 1.921rem;
+    }
+    h4 {
+        font-size: 1.7rem;
+    }
+    h5 {
+        font-size: 1.479rem;
+    }
+    h6 {
+        font-size: 1.271rem;
+    }
+}
+/* @media (min-width: 1800px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.55rem;
+    }
+    h3 {
+        font-size: 2.121rem;
+    }
+    h4 {
+        font-size: 1.9rem;
+    }
+    h5 {
+        font-size: 1.679rem;
+    }
+    h6 {
+        font-size: 1.471rem;
+    }
+} */
 a {
     color: #212223;
+    text-decoration: none;
 }
 img {
     display: block;
 }
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+}
+@media (min-width: 720px) {
+    .wrapper {
+        margin: 0 2em;
+    }
+}
+@media (min-width: 1200px) {
+    .wrapper {
+        margin: auto;
+    }
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+@media (min-width: 900px) {
+    .flex {
+        flex-wrap: nowrap;
+    }
+}
 
-/* end base style */
+/* -----end base style----- */
 
-/* header style */
+/* -----header style----- */
 
 header {
     padding: 1.5em 0;
     background-color: #212223;
-    background-image: url("../images/tattooing-bw-md.jpeg");
+    background-image: url("../images/tattooing-bw-lg.jpeg");
     background-position: center;
     background-size: cover;
 }
 .logo {
     margin: auto;
     width: 90%;
-    max-width: 80em;
 }
 
-/* end header style */
+/* -----end header style----- */
 
-/* nav style */
+/* -----nav style----- */
 
 nav {
     color: #ecc068;
@@ -80,11 +181,22 @@ nav {
     text-transform: uppercase;
     text-align: center;
 }
+
+@media (min-width: 600px) {
+    nav {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 1200px) {
+    nav {
+        font-size: 1.4rem;
+    }
+}
 .fix-nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
 }
 .site-nav-toggle {
     background-color: #212223;
@@ -123,28 +235,110 @@ nav {
     display: none;
 }
 
-/* end nav style */
+/* -----end nav style----- */
 
-/* contact info style */
+/* -----about style----- */
 
+@media (min-width: 900px) {
+    .about {
+        margin-left: 2em;
+    }
+}
+
+/* -----end about style----- */
+
+/* -----contact info style----- */
+
+.contact-info {
+    flex-shrink: 1;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+table {
+    margin: auto;
+    text-align: left;
+}
+td {
+    padding: 0.2em 0;
+}
+td:nth-of-type(odd) {
+    padding-right: 0.3em;
+}
 address {
     font-style: normal;
 }
 
-/* end contact info style */
+/* -----end contact info style----- */
 
-/* artist section style */
+/* -----artist section style----- */
 
+.artist-figures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: -1em;
+}
 figure {
-    margin: 0.5em;
+    position: relative;
+    width: 8em;
+    height: 12em;
+    margin: 0 0 1em;
     border: 3px solid #80333d;
     background-color: #212223;
+    background-position: center;
+    background-size: cover;
     text-align: center;
 }
+@media (min-width: 600px) {
+    figure {
+        width: 10em;
+        height: 14em;
+    }
+}
+@media (min-width: 1200px) {
+    figure {
+        width: 12em;
+        height: 16em;
+    }
+}
+figure:hover {
+    opacity: 0.7;
+}
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #212223;
+    opacity: 0.88;
+    padding: 0.4em 0;
+}
+figcaption h3 {
+    margin: 0;
+}
+.artist-name-1 {
+    background-image: url("../images/tattoo-artist-bw-md.jpg")
+}
+.artist-name-2 {
+    background-image: url("../images/owl-md.jpg")
+}
+.artist-name-3 {
+    background-image: url("../images/stencil-md.jpg")
+}
+.artist-name-4 {
+    background-image: url("../images/tattoo-artist-md.jpeg")
+}
+.artist-name-5 {
+    background-image: url("../images/tattooing-close-md.jpeg")
+}
+.artist-name-6 {
+    background-image: url("../images/tattooing-md.jpg")
+}
 
-/* end artist section style */
+/* -----end artist section style----- */
 
-/* footer style */
+/* -----footer style----- */
 
 footer {
     margin-top: 4em;
@@ -152,22 +346,42 @@ footer {
     border-top: 2px solid #80333d;
     background-color: #212223;
     color: #a1a69f;
+    font-size: 1.2rem;
     text-align: center;
 }
-footer div:nth-of-type(2) {
-    padding-bottom: 1em;
+@media (min-width: 1200px) {
+    footer {
+        font-size: 1.4rem;
+    }
+}
+footer div {
+    margin: 0 1em;
 }
 footer h3 {
     color: #44775b;
+    font-size: 1.521rem;
     text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+    footer h3 {
+        font-size: 1.721rem;
+    }
+}
+.social-link {
+    display: inline-block;
+    padding: 0.2em;
 }
 footer a {
     color: #a1a69f;
 }
+footer a:hover {
+    text-decoration: underline;
+}
 .copyright {
+    margin-top: 1em;
     padding-top: 1em;
     border-top: 1px solid #a1a69f;
     font-size: 1rem;
 }
 
-/* end footer style */
+/* -----end footer style----- */
