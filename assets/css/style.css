@@ -1,11 +1,21 @@
+/* 
+
+@media (max-width: 599px) phone only
+@media (min-width: 600px) tablet portrait
+@media (min-width: 900px) tablet landscape
+@media (min-width: 1200px) desktop
+@media (min-width: 1800px) big desktop
+
+*/
+
 /* base style */
 
 * {
     box-sizing: border-box;
 }
 body {
-    background-color: #E0CCAF;
-    color: #131319;
+    background-color: #ebdecc;
+    color: #212223;
     font-size: 1.2rem;
     font-family: 'Noto Serif', serif;
 }
@@ -13,7 +23,7 @@ main {
     padding: 1em;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #961D1D;
+    color: #80333d;
     font-family: 'Rye', cursive;
     text-align: center;
 }
@@ -36,7 +46,7 @@ h6 {
     font-size: .871rem;
 }
 a {
-    color: #131319;
+    color: #212223;
 }
 img {
     display: block;
@@ -48,13 +58,15 @@ img {
 
 header {
     padding: 1.5em 0;
-    background-color: #131319;
-    background-image: url("../images/tattooing-bw-sm.jpeg");
-    background-position: center
+    background-color: #212223;
+    background-image: url("../images/tattooing-bw-md.jpeg");
+    background-position: center;
+    background-size: cover;
 }
 .logo {
     margin: auto;
-    max-width: 90%;
+    width: 90%;
+    max-width: 80em;
 }
 
 /* end header style */
@@ -62,21 +74,47 @@ header {
 /* nav style */
 
 nav {
-    background-color: #131319;
-    color: #58B1BC;
+    color: #ecc068;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
 }
-nav div {
+.menu-toggle {
+    background-color: #212223;
     padding: 0.5em 0;
+    box-shadow: 0 3px 2px #888888;
 }
-nav ul {
+.menu-toggle:hover {
+    color: #494a4b;
+}
+.open {
+    display: block;
+}
+.site-nav {
     display: none;
+    transition: height ease-in-out 300ms;
+}
+.site-nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+.site-nav li:first-of-type {
+    border-top: 1px solid #a1a69f;
+}
+.site-nav li {
+    background-color: #212223;
+    margin: auto;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #a1a69f;
+    max-width: 15em;
+}
+.site-nav li:hover {
+    background-color: #494a4b;
+}
+.dropdown {
+    display: none;
 }
 
 /* end nav style */
@@ -93,8 +131,8 @@ address {
 
 figure {
     margin: 0.5em;
-    border: 3px solid #961D1D;
-    background-color: #131319;
+    border: 3px solid #80333d;
+    background-color: #212223;
     text-align: center;
 }
 
@@ -104,19 +142,25 @@ figure {
 
 footer {
     margin-top: 4em;
-    padding-bottom: 1.5em;
-    border-top: 2px solid #961D1D;
-    background-color: #131319;
-    color: #58B1BC;
+    padding-bottom: 1em;
+    border-top: 2px solid #80333d;
+    background-color: #212223;
+    color: #a1a69f;
+    text-align: center;
+}
+footer div:nth-of-type(2) {
+    padding-bottom: 1em;
 }
 footer h3 {
-    color: #D8B734;
+    color: #44775b;
+    text-transform: uppercase;
 }
 footer a {
-    color: #58B1BC;
+    color: #a1a69f;
 }
 .copyright {
-    text-align: center;
+    padding-top: 1em;
+    border-top: 1px solid #a1a69f;
     font-size: 1rem;
 }
 
