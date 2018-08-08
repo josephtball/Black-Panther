@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Black Panter Tattoo Parlor - Artist Name</title>
+    <title>Black Panter Tattoo Parlor</title>
     <meta name="author" content="Joseph T. Ball">
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/vnd.microsoft.icon">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Rye" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
@@ -17,29 +17,19 @@
 </head>
 
 <body>
-    <header>
-        <!-- hero image and logo -->
-    </header>
-    
-    <nav>
-        <ul>
-            <li>home</li>
-            <li>artistis
-                <ul>
-                    <li>Jim</li>
-                    <li>Pete</li>
-                </ul>
-            </li>
-        </ul>
+    <nav class="back-bar">
+        <div class="wrapper">
+            <a href="/index.html"><i class="fas fa-arrow-left"></i> back</a>
+        </div>
     </nav>
 
-    <main>
-        <section>
+    <main class="wrapper">
+        <section class="artist-info">
             <!-- about ssection -->
-            <div>
-                <img src="assets/images/artist-name.jpg" alt="ARtist Name">
+            <div class="artist-name-1 artist-hero">
+                <h2>Artist<br>Name</h2>
             </div>
-            <div>
+            <div class="artist-about">
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies lacus a velit gravida lobortis. Nunc lectus sem, aliquam eget commodo eget, aliquet ac purus. Etiam faucibus, massa id porta tempor, ex tellus cursus nibh, quis facilisis urna justo eget sapien. Integer accumsan, dui posuere pulvinar rutrum, quam enim tempor lorem, vel pulvinar metus diam at quam. Sed nec vestibulum lacus. Vestibulum posuere tortor at laoreet sagittis. Cras imperdiet, risus non porttitor egestas, purus velit iaculis felis, at semper lectus tortor a eros.</p>
             </div>
@@ -52,45 +42,53 @@
     </main>
 
     <footer>
-        <!-- footer with social links -->
-        <div>
-            <h3>connect with us</h3>
-            <a href="https://www.facebook.com/Black-Panther-Tattoo-189053257829977/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/blackpanthertattoo/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
-        </div>
+        <section class="flex">
+            <div>
+                <!-- shop hours and contact info -->
+                <h3>Contact Info</h3>
+                <table>
+                    <tr>
+                        <td><i class="fas fa-phone"></i></td>
+                        <td><a href="tel:732-903-7513">(732) 903-7513</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-envelope"></i></td>
+                        <td><a href="mailto:admin@blackpanther.com">admin@blackpanther.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-home"></i></td>
+                        <td><a href="https://goo.gl/maps/ruaaGYcPKww" target="_blank">
+                                <address>
+                                    2055 NJ-88<br>
+                                    Brick, NJ 08724
+                                </address>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-clock"></i></td>
+                        <td>1pm - 9pm Everyday</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div>
+                <!-- footer with social links -->
+                <h3>connect with us</h3>
+                <a class="social-link" href="https://www.facebook.com/Black-Panther-Tattoo-189053257829977/" target="_blank"><i class="fab fa-facebook-square"></i> Black Panter Tattoo</a><br>
+                <a class="social-link" href="https://www.instagram.com/blackpanthertattoo/" target="_blank"><i class="fab fa-instagram"></i> blackpantertattoo</a><br>
+                <a class="social-link" href="" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+            </div>
+        </section>
 
-        <div>
-            <!-- shop hours and contact info -->
-            <h3>Contact Info</h3>
-            <div>
-                <i class="fas fa-phone"></i>
-                <a href="tel:732-903-7513">(732) 903-7513</a>
-            </div>
-            <div>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:admin@blackpanther.com">admin@blackpanther.com</a>
-            </div>
-            <div>
-                <i class="fas fa-home"></i>
-                <a href="https://goo.gl/maps/ruaaGYcPKww" target="_blank">
-                    <address>
-                        2055 NJ-88<br>
-                        Brick, NJ 08724
-                    </address>
-                </a>
-            </div>
-            <div>
-                <i class="fas fa-clock"></i>
-                1pm - 9pm Everyday
-            </div>
-        </div>
-
-        <div class="copyright">
+        <section class="copyright">
             &copy; 2018 Black Panther Tattoo Parlor. All Rights Reserved.<br>
             <a href="https://joe-ball-portfolio.herokuapp.com" target="_blank">Website by Joseph Ball</a>
-        </div>
+        </section>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
 </body>
 
 </html>

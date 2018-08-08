@@ -143,13 +143,13 @@ img {
         margin: auto;
     }
 }
-.flex {
+.flex-reverse {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
 }
 @media (min-width: 900px) {
-    .flex {
+    .flex-reverse {
         flex-wrap: nowrap;
     }
 }
@@ -181,7 +181,9 @@ nav {
     text-transform: uppercase;
     text-align: center;
 }
-
+nav a {
+    color: #ecc068;
+}
 @media (min-width: 600px) {
     nav {
         font-size: 1.2rem;
@@ -233,6 +235,26 @@ nav {
 }
 .dropdown {
     display: none;
+}
+
+/* for artist pages */
+.back-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #212223;
+    padding: 0.5em 0;
+    box-shadow: 0 3px 2px #888888;
+    text-align: left;
+}
+.back-bar a {
+    margin-left: 2em;
+}
+@media (min-width: 1200px) {
+    .back-bar a {
+        margin-left: 4em;
+    }
 }
 
 /* -----end nav style----- */
@@ -293,13 +315,13 @@ figure {
 @media (min-width: 600px) {
     figure {
         width: 10em;
-        height: 14em;
+        height: 15em;
     }
 }
 @media (min-width: 1200px) {
     figure {
         width: 12em;
-        height: 16em;
+        height: 18em;
     }
 }
 figure:hover {
@@ -318,7 +340,7 @@ figcaption h3 {
     margin: 0;
 }
 .artist-name-1 {
-    background-image: url("../images/tattoo-artist-bw-md.jpg")
+    background-image: url("../images/tattoo-artist-bw-md-crop.jpg")
 }
 .artist-name-2 {
     background-image: url("../images/owl-md.jpg")
@@ -337,6 +359,66 @@ figcaption h3 {
 }
 
 /* -----end artist section style----- */
+
+/* -----artist info style----- */
+
+.artist-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2.125em;
+}
+@media (min-width: 600px) {
+    .artist-info {
+        margin-top: 2.574em;
+    }
+}
+@media (min-width: 1200px) {
+    .artist-info {
+        margin-top: 2.961em;
+    }
+}
+.artist-hero {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 8em;
+    /* width: 90%; */
+    height: 12em;
+    margin: auto;
+    /* padding-right: 2em */
+}
+@media (min-width: 600px) {
+    .artist-hero {
+        background-size: 10em;
+        height: 15em;
+    }
+}
+@media (min-width: 1200px) {
+    .artist-hero {
+        background-size: 12em;
+        height: 18em;
+    }
+}
+.artist-hero h2 {
+    display: inline-block;
+    margin-top: 4em;
+    margin-left: 2em;
+    text-align: left;
+}
+@media (min-width: 600px) {
+    .artist-hero h2 {
+        margin-top: 6em;
+        margin-left: 4em;
+    }
+}
+@media (min-width: 1200px) {
+    .artist-hero h2 {
+        margin-top: 8em;
+        margin-left: 6em;
+    }
+}
+
+/* -----end artist info style----- */
 
 /* -----footer style----- */
 

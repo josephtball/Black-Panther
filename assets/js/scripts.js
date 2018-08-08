@@ -27,5 +27,4 @@ $(document).ready(function() {
         $dropdown.slideUp(300);
     });
 
-
 });
