@@ -102,26 +102,6 @@ h6 {
         font-size: 1.271rem;
     }
 }
-/* @media (min-width: 1800px) {
-    h1 {
-        font-size: 3.2rem;
-    }
-    h2 {
-        font-size: 2.55rem;
-    }
-    h3 {
-        font-size: 2.121rem;
-    }
-    h4 {
-        font-size: 1.9rem;
-    }
-    h5 {
-        font-size: 1.679rem;
-    }
-    h6 {
-        font-size: 1.471rem;
-    }
-} */
 a {
     color: #212223;
     text-decoration: none;
@@ -161,7 +141,7 @@ img {
 header {
     padding: 1.5em 0;
     background-color: #212223;
-    background-image: url("../images/tattooing-bw-lg.jpeg");
+    background-image: url("../images/tattooing-bw-md.jpeg");
     background-position: center;
     background-size: cover;
 }
@@ -176,20 +156,17 @@ header {
 
 nav {
     color: #ecc068;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
 }
 nav a {
+    display: inline-block;
     color: #ecc068;
+    padding: 0.5em 2em;
 }
 @media (min-width: 600px) {
-    nav {
-        font-size: 1.2rem;
-    }
-}
-@media (min-width: 1200px) {
     nav {
         font-size: 1.4rem;
     }
@@ -202,13 +179,13 @@ nav a {
 }
 .site-nav-toggle {
     background-color: #212223;
-    padding: 0.5em 0;
     box-shadow: 0 3px 2px #888888;
 }
 .site-nav-toggle:hover {
     color: #494a4b;
 }
 .site-nav {
+    z-index: 999;
     display: none;
     position: absolute;
     left: 0;

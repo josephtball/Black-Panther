@@ -5,7 +5,9 @@ $(document).ready(function() {
     var $nav = $('.site-nav');
     var $dropdown = $('.dropdown');
 
-    $('.site-nav-toggle').on('click', function() {
+    $('.site-nav-toggle').on('click', function(e) {
+        e.preventDefault();
+
         if ($nav.is(':hidden')) {
             $nav.slideDown(300);
         } else {
@@ -14,7 +16,9 @@ $(document).ready(function() {
         }
     });
 
-    $('.dropdown-toggle').on('click', function() {
+    $('.dropdown-toggle').on('click', function(e) {
+        e.preventDefault();
+        
         if ($dropdown.is(':hidden')) {
             $dropdown.slideDown(300);
         } else {
