@@ -26,6 +26,11 @@ $(document).ready(function() {
         }
     });
 
+    $('.nav-link').on('click', function() {
+        $nav.slideUp(300);
+        $dropdown.slideUp(300);
+    });
+
     $('.off-menu').on('click', function() {
         $nav.slideUp(300);
         $dropdown.slideUp(300);

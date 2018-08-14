@@ -201,14 +201,18 @@ nav a {
     border-top: 1px solid #a1a69f;
 }
 .site-nav li {
+    max-width: 15em;
     background-color: #212223;
     margin: auto;
-    padding: 0.5em 0;
     border-bottom: 1px solid #a1a69f;
-    max-width: 15em;
 }
 .site-nav li:hover {
     background-color: #494a4b;
+}
+.site-nav a {
+    padding: 0.5em;
+    width: 100%;
+    max-width: 15em;
 }
 .dropdown {
     display: none;
