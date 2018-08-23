@@ -166,11 +166,6 @@ nav a {
     color: #ecc068;
     padding: 0.5em 2em;
 }
-@media (min-width: 600px) {
-    nav {
-        font-size: 1.4rem;
-    }
-}
 .fix-nav {
     position: fixed;
     top: 0;
@@ -216,6 +211,41 @@ nav a {
 }
 .dropdown {
     display: none;
+}
+@media (min-width: 600px) {
+    nav {
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 900px) {
+    .site-nav-toggle {
+        display: none;
+    }
+    .site-nav {
+        display: block;
+        position: static;
+    }
+    .site-nav ul {
+        display: block;
+        background-color: #212223;
+    }
+    .top-border {
+        border-top: none;
+    }
+    .site-nav li {
+        display: inline-block;
+        border-bottom: none;
+    }
+    .dropdown {
+        position: absolute;
+    }
+    .dropdown li {
+        display: none;
+        max-width: 15em;
+        background-color: #212223;
+        margin: auto;
+        border-bottom: 1px solid #a1a69f;
+    }
 }
 
 /* for artist pages */
