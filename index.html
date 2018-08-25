@@ -18,7 +18,7 @@
 
 <body>
     <!-- hero image and logo -->
-    <header class="off-menu">
+    <header id="home" class="off-menu">
             <img class="logo wrapper" src="assets/images/black-panther-logo.png" alt="Black Panther Tattoo Parlor">
     </header>
 
@@ -28,9 +28,9 @@
         </div>
         <div class="site-nav">
             <ul>
-                <li class="top-border"><a href="#" class="nav-link">home</a></li>
-                <li><a href="#" class="nav-link">info</a></li>
-                <li class="dropdown-toggle"><a href="#">artistis <span class="dropdown-arrow">&#9660;</span></a></li>
+                <li class="top-border"><a href="#" class="nav-link scroll">home</a></li>
+                <li><a href="#" class="nav-link scroll">info</a></li>
+                <li class="dropdown-toggle"><a href="#" class="nav-link scroll">artistis <span class="dropdown-arrow">&#9660;</span></a></li>
                 <ul class="dropdown">
                     <li><a href="artist-template.html" class="nav-link">Artist Name</a></li>
                     <li><a href="artist-template.html" class="nav-link">Artist Name</a></li>
@@ -39,13 +39,13 @@
                     <li><a href="artist-template.html" class="nav-link">Artist Name</a></li>
                     <li><a href="artist-template.html" class="nav-link">Artist Name</a></li>
                 </ul>
-                <li><a href="#" class="nav-link">gallery</a></li>
+                <li><a href="#" class="nav-link scroll">gallery</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="off-menu wrapper">
-        <div class="flex-reverse">
+        <div id="info" class="flex-reverse">
             <section class="contact-info">
                 <!-- shop hours and contact info -->
                 <h2>Contact Info</h2>
@@ -82,7 +82,7 @@
             </section>
         </div>
 
-        <section>
+        <section id="artists">
             <!-- tattoo artist -->
             <h2>Artists</h2>
             <div class="artist-figures">
@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="gallery">
             <!-- shop instagram feed? -->
             <h2>Gallery</h2>
         </section>
